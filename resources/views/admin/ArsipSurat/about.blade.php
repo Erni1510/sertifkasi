@@ -3,18 +3,13 @@
 <section class="content">
     <div class="container-fluid">
         <div class="block-header">
-            <h2>
-                DATA TENTANG DEVELOPER
-                
-            </h2>
         </div>
         <!-- Basic Examples -->
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="header">
-                        <h2>DATA DIRI
-                        </h2>
+                        <h2>ABOUT</h2>
                     </div>
                     <div class="body">
 
@@ -22,15 +17,15 @@
                                 <div class="col-md-3">
                               <div class="image">
                                 <a style="cursor: pointer;" data-toggle="modal" data-target="#gantiFoto">
-                                    <img src="{{url('admin/images/kegiatan/agustin.jpg')}}" width="100px" height="130px" alt="User" />
+                                    <img src="{{url('admin/images/kegiatan/ErniSrihartini.jpeg')}}" width="100px" height="130px" alt="User" />
                                 </a>
                             </div>
                          </div>
                          <div class="col-md-4">
-                                <p>NIM : 1931710076</p>
-                                <p>NAMA : AGUSTIN DWI NUR HAMIDAH</p>
-                                <p>KELAS : MI 3B</p>
-                                <p>ABSEN :01</p>
+                            <h2>Aplikasi ini dibuat oleh </h2>
+                                <p>Nama : Erni Srihartini</p>
+                                <p>NIM : 1931710003</p>
+                                <p>Tanggal : 16 September 2022</p>
                          </div>
                      </div>
                         

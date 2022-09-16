@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>ADMIN | A-AURAT</title>
+    <title>ARSIP SURAT</title>
     <!-- Favicon-->
     <link rel="icon" href="{{url('favicon.ico')}}" type="image/x-icon">
 
@@ -27,17 +27,11 @@
 
 <body class="login-page">
     <div class="login-box">
-        <div class="logo">
-            <a href="javascript:void(0);"><b>A-AURAT</b></a>
-            <small>Apliaskasi Arsip Surat</small>
-            <br>
-            <small>DESA CONTOH X</small>
-        </div>
         <div class="card">
             <div class="body">
                 <form id="sign_in" action="{{route('login')}}" method="POST">
                     @csrf
-                    <div class="msg">Masuk dengan email dan password</div>
+                    <div class="msg">APLIKASI PENGARSIPAN</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -56,8 +50,6 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-8 p-t-5">
-                           <!--  <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Remember Me</label> -->
                         </div>
                         <div class="col-xs-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit">Masuk</button>

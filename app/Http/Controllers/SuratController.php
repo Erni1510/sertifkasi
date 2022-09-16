@@ -48,25 +48,25 @@ class SuratController extends Controller
     {
         $data = DB::table('arsip_surat')
         ->get();
-        return view('admin.DataKebijakan.index',compact('data'));
+        return view('admin.ArsipSurat.index',compact('data'));
     }
 
     public function createPage()
     {
-        return view('admin.DataKebijakan.create');
+        return view('admin.ArsipSurat.create');
     }
 
     public function editPage($id)
     {
         $data = DB::table('arsip_surat')->where('id',$id)->first();
-        return view('admin.DataKebijakan.edit',compact('data'));
+        return view('admin.ArsipSurat.edit',compact('data'));
     }
 
 
     public function detailPage($id)
     {
         $data = DB::table('arsip_surat')->where('id',$id)->first();
-        return view('admin.DataKebijakan.detail',compact('data'));
+        return view('admin.ArsipSurat.detail',compact('data'));
     }
 
     public function create(Request $request)
@@ -122,6 +122,6 @@ class SuratController extends Controller
 
     public function about()
     {
-        return view('admin.DataKebijakan.about');
+        return view('admin.ArsipSurat.about');
     }
 }

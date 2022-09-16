@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            <a href="{{url('admin/surat/create_page')}}" class="btn btn-primary waves-effect" type="button">Arsipkan Surat</a>
+                            <a href="{{url('admin/surat/create_page')}}" class="btn btn-primary waves-effect pull-right" type="button">Arsipkan Surat</a>
                            @if($message=Session::get('success'))
                         <div class="alert bg-teal" role="alert">
                            
@@ -29,7 +29,7 @@
                                 <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                     <thead>
                                         <tr>
-                                            <th>No Surat</th>
+                                            <th>Nomor Surat</th>
                                             <th>Kategori</th>
                                             <th>Judul</th>
                                             <th>Waktu Pengarsipan</th>
@@ -46,12 +46,12 @@
                                             <td>
                                                  <a
                                                  onclick="return confirm('Apakah anda yakin untuk menghapus data?')"
-                                                 href="{{url('admin/surat/delete/'.$d->id)}}"><i class="material-icons">delete</i> </a>
+                                                 href="{{url('admin/surat/delete/'.$d->id)}}"><i class="material-icons" style="color: red">delete</i> </a>
                                                   &nbsp;
-                                                  <a href="{{url('admin/surat/download/'.$d->id)}}" target="_blank"><i class="material-icons">download</i></a>
+                                                  <a href="{{url('admin/surat/download/'.$d->id)}}" target="_blank"><i class="material-icons" style="color: yellow">download</i></a>
                                                   &nbsp;
                                                   <a href="{{url('admin/surat/detail/'.$d->id)}}">
-                                                    <i class="material-icons">visibility</i> </a>
+                                                    <i class="material-icons" style="color: blue">visibility</i></a>
                                                 
                                             </td>
                                         </tr>

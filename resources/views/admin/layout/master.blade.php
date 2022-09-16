@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Dashboard | A-AURAT</title>
+    <title>Aplikasi Arsip Surat</title>
     <!-- Favicon-->
-    <link rel="icon" href="{{url('favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
 
     <!-- Bootstrap Core Css -->
     <link href="{{url('plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
@@ -46,7 +46,7 @@
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
-                <div class="spinner-layer pl-red">
+                <div class="spinner-layer pl-blue">
                     <div class="circle-clipper left">
                         <div class="circle"></div>
                     </div>
@@ -69,14 +69,14 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">Aplikasi Arsip Surat</a>
+                <a class="navbar-brand" href="index.html">Arsip Surat Desa KarangDuren</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Notifications -->
                     <li class="dropdown">
                         <a onclick="event.preventDefault();
-                                                   document.getElementById('logout-form').submit();" style="cursor: pointer;">
+                        document.getElementById('logout-form').submit();" style="cursor: pointer;">
                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">@csrf </form>
                             <i class="material-icons">logout</i>
                            <!--  <span class="label-count">1</span> -->
@@ -94,8 +94,8 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <a style="cursor: pointer;" data-toggle="modal" data-target="#gantiFoto">
-                        <img src="{{url('admin/images/kegiatan/agustin.jpg')}}" width="48" height="48" alt="User" />
+                    <a style="cursor: alias;" data-toggle="modal" data-target="#gantiFoto">
+                        <img src="{{url('admin/images/kegiatan/ErniSrihartini.jpeg')}}" width="48" height="48" alt="User" />
                     </a>
                 </div>
                 <div class="info-container">
@@ -110,32 +110,18 @@
                     <li class="header">Menu</li>
                     <li >
                         <a href="{{url('home')}}">
-                            <i class="material-icons">print</i>
+                            <i class="material-icons">star</i>
                             <span>Arsip</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{url('admin/surat/developer')}}">
-                            <i class="material-icons">perm_identity</i>
+                            <i class="material-icons">warning</i>
                             <span>About</span>
                         </a>
                     </li>                 
                 </ul>
             </div>
-            <!-- #Menu -->
-            <!-- Footer -->
-            <div class="legal">
-                <div class="copyright">
-                    &copy; {{date('Y')}} <a href="javascript:void(0);">A-AURAT</a>.
-                </div>
-                <div class="version">
-                    <b>Version: </b> 1.0.0
-                </div>
-            </div>
-            <!-- #Footer -->
-        </aside>
-        <!-- #END# Left Sidebar -->
-        
     </section>
     @yield('content')
     
